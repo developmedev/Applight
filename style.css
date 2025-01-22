@@ -97,10 +97,10 @@ h6 {
 	position: relative;
 }
 .banner {
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
-	padding:100px 0px;
-	position:relative;
+	background: #0c3857;
+	background: linear-gradient(to left, #0c3857, #0c3857);
+	padding: 100px 0px;
+	position: relative;
 }
 .banner::before {
 	content: "";
