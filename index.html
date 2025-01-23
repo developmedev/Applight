@@ -121,8 +121,9 @@
         a:hover {
             text-decoration: underline;
         }
-    .nav-scroll{
-        background:grey;
+    .nav-scroll {
+        background: grey;
+        background: url("imagebackgroung.jpeg") center;
     }
 </style>
 </head>
@@ -133,27 +134,27 @@
         <div class="container" style="">
             <!--<h6>TRADE BOT PRO</h6>-->
             <img src="images/TradeBotPro.png" height="50px" />
-            <b style="padding-left:10px;padding-top:4px">TRADEBOTPRO</b>
+            <b style="padding-left:10px;padding-top:4px;color:white">TRADEBOTPRO</b>
             <!--<a class="navbar-brand navbar-logo" href="#"> <img src="images/Capture.JPG" alt="logo" class="logo-1"> </a>-->
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"> <a class="nav-link" style="color:black" href="index.html">Home</a> </li>
-                    <li class="nav-item"> <a class="nav-link" style="color:black" href="Pricing.html">Pricing</a> </li>
-                    <li class="nav-item"> <a class="nav-link" style="color:black" href="HowItWorks.html">How It Works</a> </li>
-                    <li class="nav-item"> <a class="nav-link" style="color:black" href="Contact.html">Contact Us</a> </li>
+                    <li class="nav-item"> <a class="nav-link" style="color:white" href="index.html">Home</a> </li>
+                    <li class="nav-item"> <a class="nav-link" style="color: white" href="Pricing.html">Pricing</a> </li>
+                    <li class="nav-item"> <a class="nav-link" style="color: white" href="HowItWorks.html">How It Works</a> </li>
+                    <li class="nav-item"> <a class="nav-link" style="color: white" href="Contact.html">Contact Us</a> </li>
 
                     <!--<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">About</a> </li>-->
                     <!--<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Requirements</a> </li>-->
                     <!--<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Team</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">T&Cs</a> </li>
-            <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="11">Disclaimer</a> </li>-->
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">T&Cs</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="11">Disclaimer</a> </li>-->
 
 
                 </ul>
             </div>
-        
+
         </div>
     </nav>
 
@@ -174,9 +175,9 @@
                                 Start earning today with this AI-powered, user-friendly trading solution!
                             </p>
                             <!--<ul>
-                            <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s" /></a></li>
-                            <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s" /></a></li>
-                        </ul>-->
+                                <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s" /></a></li>
+                                <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s" /></a></li>
+                            </ul>-->
                         </div>
                     </div>
                     <div class="col-md-4 col-sm-12" style="height:500px;padding-top:60px">
@@ -201,11 +202,13 @@
                 </div>
             </div>
         </div>
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container">
-            <div class="tradingview-widget-container__widget"></div>
-            <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>-->
-            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>{
+
+    </section>
+    <div class="tradingview-widget-container">
+        <div class="tradingview-widget-container__widget"></div>
+        <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>-->
+        <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+{
   "symbols": [
     {
       "proName": "FOREXCOM:SPXUSD",
@@ -217,34 +220,12 @@
     }
   ],
   "showSymbolLogo": true,
-  "isTransparent": true,
+  "isTransparent": false,
   "displayMode": "adaptive",
-  "colorTheme": "light",
+  "colorTheme": "dark",
   "locale": "en"
 }</script>
-        </div>
-        <!-- TradingView Widget END -->
-        <!--<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-    {
-      "symbols": [
-        {
-          "proName": "FOREXCOM:SPXUSD",
-          "title": "S&P 500 Index"
-        },
-        {
-          "proName": "FOREXCOM:NSXUSD",
-          "title": "US 100 Cash CFD"
-        }
-
-      ],
-      "isTransparent": true,
-      "showSymbolLogo": true,
-      "colorTheme": "dark",
-      "locale": "en"
-    }
-            </script>-->
-    </section>
-
+    </div>
 
     <section class="about section-padding prelative" data-scroll-index='1'>
         <div class="container">
