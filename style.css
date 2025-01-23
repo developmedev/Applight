@@ -7,10 +7,10 @@ body {
 	font-size: 14px;
 }
 a {
-	color:#5f0099;
+	color:black;
 }
 a:hover {
-	color:#5f0099;
+	color:black;
 }
 h1, h2, h3 {
 	font-weight: 700;
@@ -97,8 +97,8 @@ h6 {
 	position: relative;
 }
 .banner {
-	background: #0c3857;
-	background: linear-gradient(to left, #0c3857, #0c3857);
+	background: grey;
+	background: linear-gradient(to left, grey, grey);
 	padding: 100px 0px;
 	position: relative;
 }
