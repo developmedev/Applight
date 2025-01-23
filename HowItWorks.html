@@ -1,69 +1,416 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TradeBotPro An Expert Advisor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How It Works - TradeBotPro EA</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <style>
+        h4 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .disclaimer {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-left: 4px solid #f44336;
+            background-color: #fefefe;
+        }
+
+        .faq-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .faq-content {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .faq-content h4 {
+                color: #0056b3;
+                margin-bottom: 10px;
+            }
+
+            .faq-content ul {
+                padding-left: 20px;
+                margin: 10px 0;
+            }
+
+            .faq-content li {
+                margin-bottom: 8px;
+            }
+
+        .wow {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        ol {
+            margin: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+            ul li {
+                margin-bottom: 8px;
+            }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .nav-scroll {
+            background: grey;
+        }
+    </style>
 </head>
+
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">TradeBotPro</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
+        <div class="container" style="">
+            <!--<h6>TRADE BOT PRO</h6>-->
+            <img src="images/TradeBotPro.png" height="50px" />
+            <b style="padding-left:10px;padding-top:4px">TRADEBOTPRO</b>
+            <!--<a class="navbar-brand navbar-logo" href="#"> <img src="images/Capture.JPG" alt="logo" class="logo-1"> </a>-->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"> <a class="nav-link" style="color:black" href="index.html">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link" style="color:black" href="Pricing.html">Pricing</a> </li>
                     <li class="nav-item"> <a class="nav-link" style="color:black" href="HowItWorks.html">How It Works</a> </li>
                     <li class="nav-item"> <a class="nav-link" style="color:black" href="Contact.html">Contact Us</a> </li>
+
+                    <!--<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="1">About</a> </li>-->
+                    <!--<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="2">Requirements</a> </li>-->
+                    <!--<li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="3">Team</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="5">Faq</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="6">T&Cs</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="#" data-scroll-nav="11">Disclaimer</a> </li>-->
+
+
                 </ul>
             </div>
+
         </div>
     </nav>
-    <!-- End Navbar -->
-    <!-- Page Banner -->
-    <section class="banner">
-        <div class="container text-center">
-            <h1 class="mt-4">How It Works</h1>
-            <p class="lead">Simplify your trading with TradeBotPro in three easy steps.</p>
-        </div>
-    </section>
 
-    <!-- How It Works Section -->
-    <section class="how-it-works section-padding">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-download fa-3x mb-3"></i>
-                    <h4>Step 1: Download & Install</h4>
-                    <p>Visit our website to download the TradeBotPro EA and install it on your MetaTrader 5 platform.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-cogs fa-3x mb-3"></i>
-                    <h4>Step 2: Configure</h4>
-                    <p>Set up your preferred trading strategy, risk levels, and other settings in just a few clicks.</p>
-                </div>
-                <div class="col-md-4 text-center">
-                    <i class="fas fa-chart-line fa-3x mb-3"></i>
-                    <h4>Step 3: Start Trading</h4>
-                    <p>Activate the bot and let it execute trades automatically while you monitor the results.</p>
+    <!-- End Navbar -->
+    <!-------Banner Start------->
+    <section class="banner" data-scroll-index='0'>
+        <div class="tradingview-widget-container" style="padding-left:110px;padding-right:100px;">
+            <h3>How It All Works?</h3>
+
+            <div class="tradingview-widget-container__widget"></div>
+            <!-- TradingView Widget BEGIN -->
+            <!-- TradingView Widget END -->
+
+        </div>
+        <div class="banner-overlay">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-12">
+                        <div class="banner-text">
+                            <h3>Trade Bot Pro EA Setup Requirements</h3>
+                            <!--<h6 class="white">This awesome template designed by Hexspeed Solutions.</h6>-->
+                            <p>
+                                Kindly review the requirements outlined below and ensure that all necessary software is installed and configured to run the bot smoothly.
+                                Once everything is set up and ready, please email us at
+                                <a href="mailto:tradebotpro.ea@gmail.com">tradebotpro.ea@gmail.com</a> to confirm the process has been completed.
+                                If you encounter any issues or require further assistance, do not hesitate to reach out.
+                                We are happy to support you through the setup process to ensure everything runs efficiently and effectively.
+                            </p>
+
+                            <h4>Equipment:</h4>
+                            <ul>
+                                <li>Windows PC / Laptop</li>
+                                <li>Reliable internet connection</li>
+                            </ul>
+
+                            <h4>Downloads and Software:</h4>
+                            <ul>
+                                <li>MetaTrader 5 app on PC/Laptop - Official Site (<a href="https://www.metatrader5.com/en/download">Download MetaTrader 5</a></li>
+                                <li>XM trading account (Live/Demo) – Bot will only work on XM.COM (<a href="https://orange-cliff-0ecfedc1e.4.azurestaticapps.net/SR_EA_V1.2.ex5">Click here</a>)</li>
+                                <li>Live account deposit – Minimum of R500 (we recommend depositing at least R1000)</li>
+                                <li>Microsoft Teams – Setting up the BOT -  Official Site (<a href="https://www.microsoft.com/en-us/microsoft-teams/download-app?ocid=ORSEARCH_Bing&msockid=16c5f09f77436ab01ca6e318762c6b06">Download Teams</a></li>
+                            </ul>
+
+                            <h4>General:</h4>
+                            <ul>
+                                <li>Access to the bot will be granted once the purchase is complete. We hwill need your XM account number to authorize access to the free trial.</li>
+                                <li>The setup process on your PC will take approximately 15-20 minutes.</li>
+                                <li>Our team will conduct a live Microsoft Teams session to assist with the setup and ensure the bot is configured correctly. During this session, you can ask questions and clarify any uncertainties.</li>
+                            </ul>
+
+                            <h4>Disclaimer:</h4>
+                            <p class="disclaimer">
+                                Our trading bot requires proper risk management and discipline to function effectively.
+                                We are not financial advisors and do not guarantee success or profits. Trading involves risk,
+                                and success depends on your commitment to risk management and responsible trading practices.
+                                Always trade within your risk tolerance.
+                            </p>
+                            <!--<ul>
+                            <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s" /></a></li>
+                            <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s" /></a></li>
+                        </ul>-->
+                        </div>
+                    </div>
+                    <div class="col-md-4 col-sm-12" style="height:500px;padding-top:60px">
+                        <!-- TradingView Widget BEGIN -->
+                        <div class="tradingview-widget-container">
+                            <div class="tradingview-widget-container__widget"></div>
+                            <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>-->
+                            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-events.js" async>
+{
+  "width": "100%",
+  "height": "100%",
+  "colorTheme": "dark",
+  "isTransparent": false,
+  "locale": "en",
+  "importanceFilter": "-1,0,1",
+  "countryFilter": "us"
+}</script>
+                        </div>
+                        <!-- TradingView Widget END -->
+                    </div>
+
                 </div>
             </div>
         </div>
+
+                        <div class="sectioner-header text-center">
+                            <h3>Frequently Asked Questions (FAQs) – Trade Bot Pro EA</h3>
+                            <span class="line"></span>
+                            <p>Find answers to common questions about Trade Bot Pro EA.</p>
+                        </div>
+                        <div class="section-content">
+                            <div class="faq-section">
+                                <div class="faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                    <h4>1. What is Trade Bot Pro EA, and how does it work?</h4>
+                                    <p>Trade Bot Pro EA is an automated trading bot (Expert Advisor) designed for platforms like MetaTrader 4 (MT4) and MetaTrader 5 (MT5). It uses advanced algorithms to analyze market data, identify profitable opportunities, and execute trades automatically. The bot eliminates emotional trading and helps optimize profits by following pre-set strategies or customized configurations tailored to your preferences.</p>
+                                </div>
+                                <div class="faq-content wow fadeInUp" data-wow-delay="0.4s">
+                                    <h4>2. What do I need to start using Trade Bot Pro EA?</h4>
+                                    <p>To use Trade Bot Pro EA, you will need:</p>
+                                    <ul>
+                                        <li>A PC or Laptop that supports MetaTrader 4 (MT4) or MetaTrader 5 (MT5).</li>
+                                        <li>A reliable internet connection to ensure uninterrupted operation.</li>
+                                        <li>An account with a compatible broker that supports MT4 or MT5 trading platforms.</li>
+                                        <li>Initial trading capital (the amount depends on your risk appetite and broker requirements).</li>
+                                    </ul>
+                                    <p>If you’re unsure about setting up these requirements, our support team is here to assist you every step of the way.</p>
+                                </div>
+                                <div class="faq-content wow fadeInUp" data-wow-delay="0.6s">
+                                    <h4>3. How much profit can I expect daily with Trade Bot Pro EA?</h4>
+                                    <p>Trade Bot Pro EA is designed to aim for consistent daily profits of 2-3% under optimal conditions. However, it’s important to note that actual results may vary depending on market conditions, your chosen strategy, and risk settings. While our bot leverages proven algorithms, trading always involves some level of risk, and past performance does not guarantee future results.</p>
+                                </div>
+                                <div class="faq-content wow fadeInUp" data-wow-delay="0.8s">
+                                    <h4>4. Can I customize the trading bot to fit my strategies?</h4>
+                                    <p>Absolutely! Trade Bot Pro EA offers full customization to align with your personal trading strategies. Whether you prefer scalping, swing trading, trend-following, or any other approach, we can configure the bot to meet your specific needs. For traders who are unsure about customizing their strategies, our team can provide recommendations based on your goals and risk tolerance.</p>
+                                </div>
+                                <div class="faq-content wow fadeInUp" data-wow-delay="1.0s">
+                                    <h4>5. Is it easy to set up and use the bot, and do you provide support?</h4>
+                                    <p>Yes, Trade Bot Pro EA is designed to be user-friendly and straightforward to set up. You’ll receive detailed installation instructions, and our dedicated support team is available to guide you through the setup process. Additionally, we offer free team classes where you can learn more about the bot, how to use it effectively, and meet our team to build trust and confidence.</p>
+                                </div>
+                            </div>
+                        </div>
+                   
+        <!-- TradingView Widget BEGIN -->
+        <div class="tradingview-widget-container">
+            <div class="tradingview-widget-container__widget"></div>
+            <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>-->
+            <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+{
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500 Index"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100 Cash CFD"
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": true,
+  "displayMode": "adaptive",
+  "colorTheme": "light",
+  "locale": "en"
+}</script>
+        </div>
+        <!-- TradingView Widget END -->
+        <!--<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
+    {
+      "symbols": [
+        {
+          "proName": "FOREXCOM:SPXUSD",
+          "title": "S&P 500 Index"
+        },
+        {
+          "proName": "FOREXCOM:NSXUSD",
+          "title": "US 100 Cash CFD"
+        }
+
+      ],
+      "isTransparent": true,
+      "showSymbolLogo": true,
+      "colorTheme": "dark",
+      "locale": "en"
+    }
+            </script>-->
     </section>
 
-    <!-- Footer -->
+
+
+
     <footer class="footer-copy">
-        <div class="container text-center">
-            <p>2025 &copy; TradeBotPro. All rights reserved.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <a href="SR_EA_V1.2.ex5" download="SR_EA_V1.2.ex5">Download File</a>
+                    </p>
+                    <p>2025 &copy; TradeBotPro. Website Designed by Hexspeed Solutions</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW();
+        wow.init();
+        $(document).ready(function (e) {
+
+            $('#video-icon').on('click', function (e) {
+                e.preventDefault();
+                $('.video-popup').css('display', 'flex');
+                $('.iframe-src').slideDown();
+            });
+            $('.video-popup').on('click', function (e) {
+                var $target = e.target.nodeName;
+                var video_src = $(this).find('iframe').attr('src');
+                if ($target != 'IFRAME') {
+                    $('.video-popup').fadeOut();
+                    $('.iframe-src').slideUp();
+                    $('.video-popup iframe').attr('src', " ");
+                    $('.video-popup iframe').attr('src', video_src);
+                }
+            });
+
+            $('.slider').bxSlider({
+                pager: false
+            });
+        });
+
+        $(window).on("scroll", function () {
+
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                navbar.addClass("nav-scroll");
+
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo.png');
+                navbar.removeClass("nav-scroll");
+            }
+
+        });
+        $(window).on("load", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo-white.png');
+                navbar.removeClass("nav-scroll");
+            }
+
+            $.scrollIt({
+
+                easing: 'swing',      // the easing function for animation
+                scrollTime: 900,       // how long (in ms) the animation takes
+                activeClass: 'active', // class given to the active nav element
+                onPageChange: null,    // function(pageIndex) that is called when page is changed
+                topOffset: -63
+            });
+        });
+
+    </script>
 </body>
 </html>
