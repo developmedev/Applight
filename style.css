@@ -110,7 +110,7 @@ h6 {
 		height: 100%;
 		background: url("imagebackgroung.jpeg") no-repeat center center;
 		background-size: cover; /* Ensures the image covers the entire area */
-		filter: blur(6px); /* Apply blur effect */
+		filter: blur(8px); /* Apply blur effect */
 		z-index: -1; /* Place it behind the content of .banner */
 	}
 .banner a.weblink {
