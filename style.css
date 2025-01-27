@@ -159,7 +159,7 @@ h6 {
 .line {
 	height: 2px;
 	width: 50px;
-	background: #8e1efc;
+	background: black;
 	display: block;
 	margin: 20px auto 20px;
 }
@@ -169,7 +169,7 @@ h6 {
 	left: 50%;
 	width: 150px;
 	height: 2px;
-	border-bottom: 2px dashed #8e1efc;
+	border-bottom: 2px dashed black;
 	margin-left: -75px;
 }
 .sectioner-header p {
@@ -188,8 +188,8 @@ h6 {
 	width: 135px;
 	height: 135px;
 	border-radius: 100px;
-	background: #7a60ff;
-	background:  linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: black;
+	background:  linear-gradient(to left, Black, grey);
 	color: #ffffff;
 	font-size: 50px;
 	line-height: 135px;
@@ -205,16 +205,16 @@ h6 {
 	margin: 0 auto;
 }
 .about-btn {
-	color: #8e1efc;
+	color: black;
 	padding: 10px 40px;
-	border: 2px solid #8e1efc;
+	border: 2px solid black;
 	border-radius: 7px;
 	margin-top: 30px;
 	display: inline-block;
 	font-size: 18px;
 }
 .about-btn:hover {
-	background:#8e1efc;
+	background:black;
 	color:#ffffff;
 	text-decoration:none;
 }
@@ -237,7 +237,7 @@ h6 {
 	height: 70px;
 	border-radius: 100px;
 	background: #ffffff;
-	color: #8e1efc;
+	color: black;
 	font-size: 30px;
 	line-height: 70px;
 	margin: 0 auto;
@@ -322,8 +322,8 @@ h6 {
 	margin-bottom: 0px;
 }
 .testimonial {
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: Black;
+	background: linear-gradient(to left, Black, grey);
 	padding:100px 0px;
 	position:relative;
 }
@@ -435,15 +435,15 @@ input {
 	color: #fff;
 	border-radius: 2rem;
 	border: 0;
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: Black;
+	background: linear-gradient(to left, Black, grey);
 	cursor:pointer;
 }
 .contact-info {
 	padding: 2rem 2rem 1rem;
 	border-radius: 8px;
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
+	background: Black;
+	background: linear-gradient(to left, Black, grey);
 }
 .contact-item {
 	margin:23px 0px;
@@ -456,21 +456,25 @@ input {
 	margin: 0;
 }
 .download {
-	background: #7a60ff;
-	background: linear-gradient(to left, #7a60ff, #cd9ffa);
-	padding:100px 0px;
-	position:relative;
+	color:white;
+	background: grey;
+	background: url("imagebackgroung.jpeg") repeat-x center center;
+		background-size: cover; /* Ensures the image covers the entire area */
+		/*filter: blur(1px);*/ /* Apply blur effect */
+		z-index: -1; /* Place it behind the content of .banner */	padding: 100px 0px;
+	position: relative;
 }
 .download::before {
 	content: "";
+
 	display: block;
 	position: absolute;
 	left: 0;
 	top: 0;
 	width: 100%;
 	height: 100%;
-	background: url(images/pattern.png);
-}
+/*	background: url(images/pattern.png);
+*/}
 .download ul {
 	list-style: none;
 }
@@ -496,13 +500,14 @@ input {
 	margin-bottom:0px;
 }
 @media all and (max-width:991px) {
-.navbar .navbar-collapse {
-	overflow: auto;
-	background:  rgb(213, 198, 221);
-	color: #fff !important;
-	text-align: center;
-	padding: 10px 0;
-}
+	.navbar .navbar-collapse {
+		overflow: auto;
+		background: url("imagebackgroung.jpeg") center;
+		/*	background:  rgb(213, 198, 221);
+*/ /*color: #fff !important;*/
+		text-align: center;
+		padding: 10px 0;
+	}
 .nav-scroll .navbar-collapse {
 	background: #fff !important;
 }
@@ -533,8 +538,8 @@ h3 {
 }
 .banner-text ul li a img {
 	width: 140px;
-	border-radius: 7px;
-}
+/*	border-radius: 7px;
+*/}
 .sectioner-header {
 	width: 90%;
 }
