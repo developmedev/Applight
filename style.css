@@ -190,7 +190,7 @@ h6 {
 	border-radius: 100px;
 	background: black;
 	background:  linear-gradient(to left, Black, grey);
-	color: #ffffff;
+	color: white;
 	font-size: 50px;
 	line-height: 135px;
 	margin: 0 auto;
@@ -203,6 +203,12 @@ h6 {
 	font-size: 14px;
 	width: 80%;
 	margin: 0 auto;
+}
+.about {
+	background: url("imagebackgroung.jpeg") no-repeat center center;
+	background-size: cover; /* Ensures the image covers the entire area */
+	/*filter: blur(8px);*/ /* Apply blur effect */
+	z-index: -1; /* Place it behind the content of .banner */
 }
 .about-btn {
 	color: black;
@@ -490,11 +496,11 @@ input {
 	border-radius: 7px;
 }
 .footer-copy {
-	background: #ffffff;
-	color: #242424;
+	background: url("imagebackgroung.jpeg") center;
+	color: white;
 	font-size: 13px;
 	text-align: center;
-	padding:15px 0px;
+	padding: 15px 0px;
 }
 .footer-copy p {
 	margin-bottom:0px;
@@ -508,102 +514,130 @@ input {
 		text-align: center;
 		padding: 10px 0;
 	}
-.nav-scroll .navbar-collapse {
-	background: #fff !important;
-}
+	.nav-scroll .navbar-collapse {
+		background: url("imagebackgroung.jpeg") center;
+	}
 #contact_form {
 	margin-bottom:20px;
 }
 }
 @media all and (max-width:768px) {
-.nav-scroll .navbar-brand img, .navbar-brand img {
-	transform: scale(0.75) !important;
-	-webkit-transform: scale(0.75) !important;
+	.nav-scroll .navbar-brand img, .navbar-brand img {
+		transform: scale(0.75) !important;
+		-webkit-transform: scale(0.75) !important;
+	}
+
+	.banner-text {
+		padding-right: 0px;
+		margin: 10px 0px 0px;
+	}
+
+	h2 {
+		font-size: 25px;
+	}
+
+	h3 {
+		font-size: 23px;
+	}
+
+	.section-padding {
+		padding: 40px 0px;
+	}
+
+	.banner-text p {
+		margin: 25px 0px;
+	}
+
+	.banner-text ul li a img {
+		width: 140px;
+		/*	border-radius: 7px;
+*/
+	}
+
+	.sectioner-header {
+		width: 90%;
+	}
+
+		.sectioner-header p {
+			font-size: 14px;
+		}
+
+	.about-btn {
+		padding: 5px 30px;
+		margin-top: 0px;
+		font-size: 16px;
+	}
+
+	.single-feature {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+
+	.team-detail {
+		margin-top: 20px;
+	}
+
+		.team-detail img {
+			width: 50%;
+		}
+
+	.bx-controls {
+		display: none;
+	}
+
+	.bx-wrapper {
+		margin: 0px 20px !important;
+	}
+
+	.slider .test-img img {
+		margin: 0 auto;
+	}
+
+	.test-img {
+		float: none;
+		width: 200px;
+		height: 200px;
+		margin: 0 auto;
+	}
+
+	.test-text {
+		float: none;
+		width: 100%;
+		text-align: center;
+	}
+
+	.section-content {
+		margin-top: 40px;
+	}
+
+	.faq-content {
+		margin: 10px 0px;
+	}
+
+		.faq-content h4 {
+			font-size: 16px;
+		}
+
+		.faq-content p {
+			font-size: 13px;
+		}
+
+	#contact_form {
+		margin-bottom: 20px;
+	}
+
+	.contact-item {
+		font-size: 12px;
+	}
+
+	.download ul li a img {
+		width: 120px;
+	}
+
+	.footer-copy p {
+		font-size: 10px;
+		background: url("imagebackgroung.jpeg") center;
+	}
+
 }
-.banner-text {
-	padding-right: 0px;
-	margin: 10px 0px 0px;
-}
-h2 {
-	font-size: 25px;
-}
-h3 {
-	font-size: 23px;
-}
-.section-padding {
-	padding: 40px 0px;
-}
-.banner-text p {
-	margin: 25px 0px;
-}
-.banner-text ul li a img {
-	width: 140px;
-/*	border-radius: 7px;
-*/}
-.sectioner-header {
-	width: 90%;
-}
-.sectioner-header p {
-	font-size: 14px;
-}
-.about-btn {
-	padding: 5px 30px;
-	margin-top: 0px;
-	font-size: 16px;
-}
-.single-feature {
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
-.team-detail {
-	margin-top: 20px;
-}
-.team-detail img {
-	width: 50%;
-}
-.bx-controls
-{
-	display:none;
-}
-.bx-wrapper {
-	margin: 0px 20px !important;
-}
-.slider .test-img img {
-	margin: 0 auto;
-}
-.test-img {
-	float:none;
-	width: 200px;
-	height: 200px;
-	margin: 0 auto;
-}
-.test-text {
-	float: none;
-	width: 100%;
-	text-align: center;
-}
-.section-content {
-	margin-top: 40px;
-}
-.faq-content {
-	margin: 10px 0px;
-}
-.faq-content h4 {
-	font-size: 16px;
-}
-.faq-content p {
-	font-size: 13px;
-}
-#contact_form {
-	margin-bottom:20px;
-}
-.contact-item {
-	font-size: 12px;
-}
-.download ul li a img {
-	width: 120px;
-}
-.footer-copy p {
-	font-size: 10px;
-}
-}
+

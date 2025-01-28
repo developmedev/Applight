@@ -1,12 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
+
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>TradeBotPro An Expert Advisor</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - TradeBotPro EA</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <style>
+        h4 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        a {
+            color: #0056b3;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .disclaimer {
+            font-size: 0.9em;
+            color: #555;
+            margin-top: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-left: 4px solid #f44336;
+            background-color: #fefefe;
+        }
+
+        .faq-section {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .faq-content {
+            padding: 20px;
+            margin-bottom: 20px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+            .faq-content h4 {
+                color: #0056b3;
+                margin-bottom: 10px;
+            }
+
+            .faq-content ul {
+                padding-left: 20px;
+                margin: 10px 0;
+            }
+
+            .faq-content li {
+                margin-bottom: 8px;
+            }
+
+        .wow {
+            animation: fadeInUp 0.8s ease-out;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        ol {
+            margin: 20px;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            color: #0056b3;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            padding-left: 20px;
+        }
+
+            ul li {
+                margin-bottom: 8px;
+            }
+
+        a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+            a:hover {
+                text-decoration: underline;
+            }
+
+        .nav-scroll {
+            background: grey;
+            background: url("imagebackgroung.jpeg") center;
+        }
+    </style>
 </head>
 <body>
     <!-- Navbar -->
@@ -20,6 +142,7 @@
                     <li class="nav-item"> <a class="nav-link" style="color:white" href="Pricing.html">Pricing</a> </li>
                     <li class="nav-item"> <a class="nav-link" style="color:white" href="HowItWorks.html">How It Works</a> </li>
                     <li class="nav-item"> <a class="nav-link" style="color:white" href="EASetup.html">EA Setup</a> </li>
+                    <li class="nav-item"> <a class="nav-link" style="color:white" href="FAQ.html">EA Setup</a> </li>
 
                     <li class="nav-item"> <a class="nav-link" style="color:white" href="Contact.html">Contact Us</a> </li>
                 </ul>
@@ -89,13 +212,118 @@
 
 
     <!-- Footer -->
+    <section class="download section-padding" data-scroll-index='11'>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectioner-header text-center">
+                        <h3>Disclaimer – Trade Bot Pro EA</h3>
+                        <span class="line"></span>
+                    </div>
+                    <div class="section-content">
+                        <p>Trade Bot Pro EA is an automated trading tool designed to assist traders in executing strategies on platforms like MetaTrader 4 (MT4) and MetaTrader 5 (MT5). While our bot is built to optimize trading performance and has the potential to generate daily profits, trading involves significant risk. Past performance is not indicative of future results, and there is no guarantee of profits.</p>
+                        <p>We are not financial advisors, and the information provided should not be considered as financial or investment advice. Users are responsible for setting their own trading parameters and making informed decisions based on their personal goals and risk tolerance.</p>
+                        <p>It is essential to use only funds that you can afford to lose, as market conditions can be unpredictable and may lead to losses. We strongly encourage practicing responsible risk management and regularly reviewing your trading performance.</p>
+                        <p>Trade Bot Pro EA is a tool to support your trading journey, but success depends on multiple factors, including strategy, market dynamics, and user input. For any questions or concerns, please consult with a licensed financial advisor before engaging in live trading.</p>
+                        <p><strong>By using Trade Bot Pro EA, you agree to accept full responsibility for all trading outcomes.</strong></p>
+                    </div>
+                </div>
+                <!--<div class="col-md-12">
+                    <div class="section-content text-center">
+                        <ul>
+                            <li><a href="#"><img src="images/appstore.png" class="wow fadeInUp" data-wow-delay="0.4s" /></a></li>
+                            <li><a href="#"><img src="images/playstore.png" class="wow fadeInUp" data-wow-delay="0.7s" /></a></li>
+                        </ul>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+    <!-------Download End------->
+
     <footer class="footer-copy">
-        <div class="container text-center">
-            <p>2025 &copy; TradeBotPro. All rights reserved.</p>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>
+                        <a href="SR_EA_V1.2.ex5" download="SR_EA_V1.2.ex5">Download File</a>
+                    </p>
+                    <p>2025 &copy; TradeBotPro. Website Designed by Hexspeed Solutions</a></p>
+                </div>
+            </div>
         </div>
     </footer>
 
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- scrollIt js -->
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW();
+        wow.init();
+        $(document).ready(function (e) {
+
+            $('#video-icon').on('click', function (e) {
+                e.preventDefault();
+                $('.video-popup').css('display', 'flex');
+                $('.iframe-src').slideDown();
+            });
+            $('.video-popup').on('click', function (e) {
+                var $target = e.target.nodeName;
+                var video_src = $(this).find('iframe').attr('src');
+                if ($target != 'IFRAME') {
+                    $('.video-popup').fadeOut();
+                    $('.iframe-src').slideUp();
+                    $('.video-popup iframe').attr('src', " ");
+                    $('.video-popup iframe').attr('src', video_src);
+                }
+            });
+
+            $('.slider').bxSlider({
+                pager: false
+            });
+        });
+
+        $(window).on("scroll", function () {
+
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                navbar.addClass("nav-scroll");
+
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo.png');
+                navbar.removeClass("nav-scroll");
+            }
+
+        });
+        $(window).on("load", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo-black.png');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo-white.png');
+                navbar.removeClass("nav-scroll");
+            }
+
+            $.scrollIt({
+
+                easing: 'swing',      // the easing function for animation
+                scrollTime: 900,       // how long (in ms) the animation takes
+                activeClass: 'active', // class given to the active nav element
+                onPageChange: null,    // function(pageIndex) that is called when page is changed
+                topOffset: -63
+            });
+        });
+
+    </script>
 </body>
 </html>
