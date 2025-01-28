@@ -126,69 +126,65 @@
 
         .nav-scroll {
             background: grey;
+            background: url("imagebackgroung.jpeg") center;
         }
     </style>
 </head>
-
 <body>
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
-        <div class="container" style="">
-            <!--<h6>TRADE BOT PRO</h6>-->
-            <img src="images/TradeBotPro.png" height="50px" />
+        <div class="container">
+            <img src="images/TradeBotPro.png" height="18px" style="padding-left:20px;padding-top:4px" />
             <b style="padding-left:10px;padding-top:4px;color:white">TRADEBOTPRO</b>
-            <!--<a class="navbar-brand navbar-logo" href="#"> <img src="images/Capture.JPG" alt="logo" class="logo-1"> </a>-->
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="fas fa-bars"></span> </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item"> <a class="nav-link" style="color:white" href="index.html">Home</a> </li>
                     <li class="nav-item"> <a class="nav-link" style="color:white" href="Pricing.html">Pricing</a> </li>
                     <li class="nav-item"> <a class="nav-link" style="color:white" href="HowItWorks.html">How It Works</a> </li>
-                    <li class="nav-item"> <a class="nav-link" style="color:white" href="EASetup.html">EA Setup</a> </li>
-                    <li class="nav-item"> <a class="nav-link" style="color:white" href="FAQ.html">EA Setup</a> </li>
+                    <li class="nav-item"> <a class="nav-link" style="color:white" href="Terms.html">EA Setup</a> </li>
+                    <li class="nav-item"> <a class="nav-link" style="color:white" href="FAQ.html">FAQ</a> </li>
 
                     <li class="nav-item"> <a class="nav-link" style="color:white" href="Contact.html">Contact Us</a> </li>
                 </ul>
             </div>
-
         </div>
     </nav>
+    <!-- End Navbar -->
+    <!-- Page Banner -->
+    <section class="banner">
+        <div class="container text-center">
+            <h2 class="mt-4" style="color:white">Pricing Plans</h2>
+            <div class="tradingview-widget-container">
+                <div class="tradingview-widget-container__widget"></div>
+                <!--<div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/" rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on TradingView</span></a></div>-->
+                <script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js" async>
+{
+  "symbols": [
+    {
+      "proName": "FOREXCOM:SPXUSD",
+      "title": "S&P 500 Index"
+    },
+    {
+      "proName": "FOREXCOM:NSXUSD",
+      "title": "US 100 Cash CFD"
+    }
+  ],
+  "showSymbolLogo": true,
+  "isTransparent": false,
+  "displayMode": "adaptive",
+  "colorTheme": "dark",
+  "locale": "en"
+}</script>
+            </div>
+            <p style="color:white" class="lead">We’re here to help! Reach out to us with any questions.</p>
+        </div>
+    </section>
 
     <!-- End Navbar -->
     <!-------Banner Start------->
-    <section class="banner" data-scroll-index='0'>
-
-
-        <!-- TradingView Widget BEGIN -->
-        <div class="tradingview-widget-container" style="padding-left:110px;padding-right:100px;">
-            <h3>Pricing Plans</h3>
-
-            <div class="tradingview-widget-container__widget"></div>
-            <!-- TradingView Widget BEGIN -->
-            <!-- TradingView Widget END -->
-
-        </div>
-        <!-- TradingView Widget END -->
-        <!--<script type="text/javascript" src="https://s3.tradingview.com/external-embedding/embed-widget-tickers.js" async>
-        {
-          "symbols": [
-            {
-              "proName": "FOREXCOM:SPXUSD",
-              "title": "S&P 500 Index"
-            },
-            {
-              "proName": "FOREXCOM:NSXUSD",
-              "title": "US 100 Cash CFD"
-            }
-
-          ],
-          "isTransparent": true,
-          "showSymbolLogo": true,
-          "colorTheme": "dark",
-          "locale": "en"
-        }
-                </script>-->
-        <!-- TradingView Widget BEGIN -->
+  
         <div class="tradingview-widget-container" style="padding-left:100px;padding-right:100px;height:500px">
             <div class="tradingview-widget-container__widget"></div>
 
@@ -197,7 +193,7 @@
 {
   "symbol": "CAPITALCOM:USDZAR",
   "width": "100%",
-  "height": "300",
+  "height": "200",
   "locale": "en",
   "dateRange": "12M",
   "colorTheme": "dark",
@@ -206,17 +202,14 @@
   "largeChartUrl": ""
 }</script>
         </div>
-        <!-- TradingView Widget END -->
-    </section>
-
-
+        
 
     <section class="download section-padding" data-scroll-index='11'>
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="sectioner-header text-center">
-                        <h3>Disclaimer – Trade Bot Pro EA</h3>
+                        <h3>Disclaimer</h3>
                         <span class="line"></span>
                     </div>
                     <div class="section-content">

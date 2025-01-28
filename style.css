@@ -205,8 +205,8 @@ h6 {
 	margin: 0 auto;
 }
 .about {
-	background: url("imagebackgroung.jpeg") no-repeat center center;
-	background-size: cover; /* Ensures the image covers the entire area */
+/*	background: url("imagebackgroung.jpeg") no-repeat center center;
+*/	/*background-size: cover;*/ /* Ensures the image covers the entire area */
 	/*filter: blur(8px);*/ /* Apply blur effect */
 	z-index: -1; /* Place it behind the content of .banner */
 }
@@ -607,7 +607,7 @@ input {
 	}
 
 	.section-content {
-		margin-top: 40px;
+		margin-top: 0px;
 	}
 
 	.faq-content {
